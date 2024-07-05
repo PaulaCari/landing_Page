@@ -1,0 +1,23 @@
+@media (max-width: 1400px){ /*1440px*/
+    .nav-links{
+         display: none;
+     }  
+ 
+     .fa-bars{
+         display: flex;
+         position: relative;
+         justify-content: flex-end;
+         width: 100%;
+         margin-right: 4rem;
+     }
+     h2{
+        font-size: 2rem;
+     }
+     h4{
+        font-size: 2rem;
+     }
+     p{
+        margin: 1.5rem 0;
+     }
+ }
+ 
