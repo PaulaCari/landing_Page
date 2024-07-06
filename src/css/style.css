@@ -1,12 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@400;500;700;900&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(90deg, var(--blue), var(--pink));
+    color: var(--text);
+    text-shadow: 1px 1px 1px #333; /*sobra no texto*/
+    overflow-wrap: break-word;   /*especifica a posição da sombra dentro do texto*/
+  }
+
 /*continer*/
 .container{
-    max-width: 1400px;
-    height: 80vh;
+    max-width: 1300px;
+    height: 100%;  
     background: rgba(255,255,255,0.15);
     margin: auto; /*margin nas laterais automaticamente*/
     margin-top: 10vh;
+    border-radius: 10px;
     box-shadow:  10px 10px 25px 2px #111; /*sombra*/
-    animation: fadeIn 4s ease-in-out; /*Aplica uma animação chamada fadeIn ao contêiner*/
+    animation: fadeIn 4s ease-in-out; /*Aplica uma animação chamada fadeIn ao container*/
+   
   }
 @keyframes fadeIn{/*animation*/
 0%{/*quando a animação comença*/
@@ -18,24 +30,26 @@
 }
   }
   
-/*nav*/
+
+/*navegação*/
 .nav{
     font-size: 1.4rem;
     padding-top: 4rem;
     padding-left: 6rem;
     display: flex;
-    align-items: center;
+    align-items: center; /* alinha na vertical*/    
 }
 
 .nav-links{
-    position: relative;
-    right: -400px; 
+    position: relative; /*É posicionado relativamente ao seu contêiner pai*/
+    right: -350px; 
     display: flex;
     align-items: center;
 }
 
 
 /*js assim que a hamburger abrir*/
+/*no responsive esta display none*/
 .nav-links.active{
     position: absolute;
     left: 0;
@@ -54,7 +68,7 @@
     display: none;
 }
 .fa-xmark.open{
-    /*copie o que estava no responsivo .fa-bars{*/
+    /*copie o que estava no responsivo .fa-bars{ */
     display: flex;
     position: relative;
     justify-content: flex-end;
@@ -65,23 +79,33 @@
 /**********************/
 
 
-
 .nav-links li{
-    margin-left: 2rem;
+    margin-left: 2rem; /*separação de cada links*/
 }
 .nav-links li a:hover{
     opacity: 0.5;
 }
 
+.nav-links .btn{
+    margin-left: 2rem; /*separa os botões na horizontal*/
+}
+
+.fa-bars, 
+.fa-xmark{
+    cursor: pointer;
+    display: none; /*esconde*/
+}
+
+
 /*button*/
 .btn{
    font-weight: 700; 
    color: var(--blue);
-   font-family: inherit;
+   font-family: inherit; /*Define a fonte do botão como a mesma fonte do elemento pai*/
    background-color: var(--text);
    border-color: var(--pink);
    display: inline-block;
-   line-height: 1.5;
+   line-height: 1.5; /*altura da linha*/
    text-decoration: none;
    cursor: pointer;
    border:  1px solid transparent;
@@ -95,17 +119,8 @@
    transition: 0.3s ease;
 }
 
-.nav-links .btn{
-    margin-left: 2rem; /*separa os boto~es na horizontal*/
-}
 
-.fa-bars, 
-.fa-xmark{
-    cursor: pointer;
-    display: none;
-}
-
-/*header*/
+/*Cabeçalho*/
 header {
     position: relative;
     margin: 6rem;
@@ -115,7 +130,6 @@ header {
 
 h2{
     font-size: 4rem;
-    /* color: var(--text); */
 }
 h4{
     font-weight: 100;
@@ -123,8 +137,13 @@ h4{
 }
 
 p{
-    margin: 4rem 0;
-    /* color: var(--text); */
+    margin: 2rem 0;  
 }
-  
+ header .btn{
+    margin-bottom: 2.5rem;
+ }
 
+
+
+
+ 

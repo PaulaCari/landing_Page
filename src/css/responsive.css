@@ -1,23 +1,22 @@
-@media (max-width: 1400px){ /*1440px*/
+  
+ @media screen and(max-width: 1300px){ /*se a largura máxima da tela for menor ou igual a 1440 pixels.*/
     .nav-links{
-         display: none;
-     }  
- 
-     .fa-bars{
-         display: flex;
-         position: relative;
-         justify-content: flex-end;
-         width: 100%;
-         margin-right: 4rem;
-     }
-     h2{
-        font-size: 2rem;
-     }
-     h4{
-        font-size: 2rem;
-     }
-     p{
-        margin: 1.5rem 0;
-     }
- }
- 
+          display: none; 
+      }  
+      .fa-bars{
+          display: flex;
+          position: relative;/* significa que o elemento será posicionado em relação à sua posição normal no fluxo do documento.*/
+          justify-content: flex-end;/*Alinha os elementos filhos do container  para a extremidade direita */
+          width: 100%;/*largura container*/
+          margin-right: 4rem;
+      }
+      h2{
+         font-size: 2rem;/*2.5*/
+      }
+      h4{
+         font-size: 1.5rem;/*2*/
+      }
+      p{
+         margin: 1.5rem 0;/*2*/
+      }
+  }

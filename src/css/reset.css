@@ -1,19 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@400;500;700;900&display=swap');
-
-body {
-  font-family: 'Poppins', sans-serif;
-  background: linear-gradient(90deg, var(--blue), var(--pink));
-  text-shadow: 1px 1px 1px #333; /*sobra no texto*/
-  overflow-wrap: break-word;   /*especifica a posição da sombra dentro do texto*/
-}
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-a, ul {
+a, 
+li {
   text-decoration: none;
   list-style: none;
   color: var(--text);
