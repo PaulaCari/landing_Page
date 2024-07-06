@@ -1,13 +1,13 @@
   
- @media screen and(max-width: 1300px){ /*se a largura máxima da tela for menor ou igual a 1440 pixels.*/
+ @media (max-width: 1300px){ /*se a largura máxima da tela for menor ou igual a 1440 pixels.*/
     .nav-links{
           display: none; 
       }  
       .fa-bars{
-          display: flex;
+          display: flex; /*icone da hamburgeer*/
           position: relative;/* significa que o elemento será posicionado em relação à sua posição normal no fluxo do documento.*/
           justify-content: flex-end;/*Alinha os elementos filhos do container  para a extremidade direita */
-          width: 100%;/*largura container*/
+          width: 100%;/*largura container o icone da hamburge se posiciona na esq*/
           margin-right: 4rem;
       }
       h2{
@@ -20,3 +20,8 @@
          margin: 1.5rem 0;/*2*/
       }
   }
+
+
+
+
+ 
